@@ -19,7 +19,7 @@
         var username = data.username;
 
         modal.textContent = "Thank you for your payment, " + title + " " + username + "!";
-        
+
         $(modal).show(function () {
             setTimeout(function () {
                 $(modal).hide();

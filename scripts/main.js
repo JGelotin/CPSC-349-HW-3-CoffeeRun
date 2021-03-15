@@ -19,6 +19,6 @@
         myTruck.createOrder.bind(myTruck, data);
         checkList.addRow.call(checkList, data);
     });
-    
+
     console.log(formHandler);
 })(window);

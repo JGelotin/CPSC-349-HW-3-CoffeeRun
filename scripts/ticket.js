@@ -8,7 +8,7 @@
         this.db = db;
     }
 
-    Receipt.prototype.createReceipt = function(receipt) {
+    Receipt.prototype.createReceipt = function (receipt) {
         console.log('Adding receipt ticket for ' + receipt.username);
         this.db.add(receipt.username, receipt);
     };

@@ -4,7 +4,9 @@
     var $ = window.jQuery;
 
     function FormHandler(selector) {
-        if (!selector) { throw new Error("No selector provided"); }
+        if (!selector) {
+            throw new Error("No selector provided");
+        }
 
         this.$formElement = $(selector);
         if (this.$formElement.length === 0) {

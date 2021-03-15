@@ -8,7 +8,7 @@
         this.db = db;
     }
 
-    Truck.prototype.createOrder = function(order) {
+    Truck.prototype.createOrder = function (order) {
         console.log('Adding order for ' + order.emailAddress);
         this.db.add(order.emailAddress, order);
     };
@@ -18,7 +18,7 @@
         this.db.remove(customerId);
     };
 
-    Truck.prototype.printOrders = function() {
+    Truck.prototype.printOrders = function () {
         var customerIdArray = Object.keys(this.db.getAll());
 
         console.log('Truck #' + this.truckId + ' has pending orders:');

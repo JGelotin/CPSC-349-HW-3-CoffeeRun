@@ -50,7 +50,7 @@
         });
 
         var description = coffeeOrder.size + ' ';
-        if(coffeeOrder.flavor) {
+        if (coffeeOrder.flavor) {
             description += coffeeOrder.flavor + ' ';
         }
 
